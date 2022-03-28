@@ -1,0 +1,72 @@
+.icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   text-transform: uppercase;
+   font-weight: bold;
+    
+}
+.rottenTomato{
+    text-align: center;
+    padding: 15% 15%;
+}
+.rtLogo{
+    width: 100%;
+}
+.rottenTomato p{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5rem;
+}
+.info{
+    text-align: center;
+    padding: 15% 15%;
+}
+
+.info p{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5rem;
+}
+
+.poster{
+    text-align: center;
+    padding: 15% 15%;
+}
+
+.poster p{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .icons{
+        grid-template-columns: 1fr;
+        
+    }
+    .rottenTomato{
+        text-align: center;
+    
+        padding: 5% 5%;
+    }
+    .rtLogo{
+        width: 80%;
+    }
+    .rottenTomato p{
+        font-size: 2rem;
+    }
+    .info{
+        text-align: center;
+        padding: 5% 5%;
+    }
+    
+    .info p{
+        font-size: 2rem;
+    }
+    
+    .poster{
+        text-align: center;
+        padding: 5% 5%;
+    }
+    
+    .poster p{
+        font-size: 2rem;
+    }
+}

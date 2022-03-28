@@ -1,0 +1,10 @@
+.bar{
+    padding: 5%;
+}
+
+.bar h1{
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}

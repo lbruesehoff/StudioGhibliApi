@@ -1,0 +1,26 @@
+.images{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.images h1{
+    grid-column: span 2;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.images img{
+    width: 90%;
+    padding: 5%;
+    justify-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .images{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    .images img{
+        width: 100%;
+        padding: 5% 5%;
+    }
+}
