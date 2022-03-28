@@ -5,7 +5,7 @@ This project take the studio ghibli API and displays rotten tomatoes ratings in 
 This project is also mobile responsive.
 
 # Live Link
-View live link here: 
+View live link here: https://nimble-panda-c086d9.netlify.app/
 
 ### How to run this project
 In the project directory, you can run:
