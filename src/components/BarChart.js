@@ -21,43 +21,43 @@ const options = {
   };
 
 const BarChart = () => {
-    //Set inital state
+    //Set inital state of empty dataset
     const [data, setData] = useState({
         datasets: [],
 });
     useEffect(()=> {
        const fetchData = async() => {
            const url = 'https://ghibliapi.herokuapp.com/films'
-           const rt = [];
+           const rottenTomato = [];
            const title = [];
          await fetch(url)
          .then((data)=> {
-             console.log("Api data", data)
+            //Turn response into a json obj
              const res = data.json();
-             return res
+             return res;
 
          })
          .then((res) => {
-             console.log("response", res)
+           //Push all rotten tomato scores and titles into the empty arrays 
             for (const obj of res) {
-                rt.push(obj.rt_score);
+              rottenTomato.push(obj.rt_score);
                 title.push(obj.title);
              
             }
             setData({
+              //Map over titles and display them all
                 labels: title.map((data) => data),
                 datasets: [
                   {
                     label: 'Scores out of 100',
-                    data:rt,
+                    data:rottenTomato,
                     borderColor: 'rgb(255, 99, 132)',
-                    backgroundColor: 'rgba(255, 9, 100, .5)',
+                    backgroundColor: 'rgba(255, 0, 0, .7)',
                     
                   },
                   
                 ],
               })
-            console.log("arrData", rt)
          }).catch(err => {
                 console.log("error", err)
             })

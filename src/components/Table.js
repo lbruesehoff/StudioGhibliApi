@@ -9,9 +9,7 @@ function TableApi(){
     useEffect(() => {
         const fetchPostList = async () => {
             const { data } = await axios("https://ghibliapi.herokuapp.com/films")
-
             setTableData({ghibli: data})
-            console.log("Data",data);
         }
         fetchPostList()
     }, [setTableData] )

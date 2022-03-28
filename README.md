@@ -1,6 +1,6 @@
 # About this project
 
-This project take the studio ghibli API and displays rotten tomatoes ratings in a bar chart. Display Information abouit movies on a table and show all movie posters.
+This project take the studio ghibli API and displays rotten tomatoes ratings in a bar chart, display Information about movies on a table, and shows all movie posters.
 
 This project is also mobile responsive.
 
